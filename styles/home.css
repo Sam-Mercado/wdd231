@@ -1,0 +1,171 @@
+/* Global Styles */
+
+:root{
+    --color1: #333;
+    --color3:#8685ef;
+    --clear-color:#fff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Typography */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+/* Main Content */
+main {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+/* Sections */
+section {
+    background:var(--clear-color);
+    padding: 0;
+    width: 100%;
+    min-width: 30%;
+    max-width: 49%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.certificate-content{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: centers;
+}
+
+/* Box Titles */
+.box-title{
+    padding: 10px 20px;
+    background-color: #333;
+}
+.box-title h2 {
+    color: var(--clear-color);
+    margin-bottom: 15px;
+    font-size: 2em;
+}
+
+/* List Styling */
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+ul li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Images */
+.card-content{
+    padding: 20px;
+}
+.card-content img {
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+}
+.filter-buttons, .courses{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.filter-buttons button{
+    background-color:var(--color1) ;
+    color: var(--clear-color);
+    font-size: 12px;
+    height: 30px;
+}
+
+.courses button{
+    background-color:var(--color3);
+    color: var(--clear-color);
+    font-size: 16px;
+    height: 40px;
+
+}
+
+.certificate-content button{
+    margin: 10px;
+    width: auto;
+    padding: 5px 15px;
+    border-style: none;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+.line{
+    background-color: var(--color1);
+    height: 0.5px;
+    width: 100%;
+    
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: var(--clear-color);
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 1em;
+}
