@@ -19,3 +19,10 @@ function filterCourses(filter){
         } else {course.style.display = 'block'}
     });
 }
+
+
+// footer
+
+const year = document.querySelector('#year');
+const today = new Date();
+year.innerHTML = `<span class='highlight'> ${today.getFullYear()}</span>&copy; Samuel Mercado Perez 🇧🇴`;
