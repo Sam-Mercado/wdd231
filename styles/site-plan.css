@@ -1,0 +1,133 @@
+/* Global Styles */
+:root{
+    --clear:#F4F4F4;
+    --dark:#333;
+    --primary: #2874a6;
+    --secundary:#446dba7b;
+    --tertiary: #effaff;
+    --shadow-1:  0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Typography */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color:var(--tertiary) ;
+    color: var(--dark);
+    line-height: 1.6;    
+}
+
+/* Header */
+header {
+    background-color: var(--primary); 
+    color: var(--clear);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: var(--shadow-1);
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FFD700; /* Gold */
+}
+
+/* Main Content */
+main {
+    margin-top: 30px;
+    padding: 20px;
+}
+
+/* Sections */
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: var(--shadow-1);
+}
+
+
+.cards{
+    width: 100%;
+    background-color:var(--tertiary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:first baseline;
+}
+
+.cards h1{
+    width: 100%;
+}
+
+.users{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+}
+
+#scenarios{
+    max-width: 30%;
+    margin: 20px;
+    padding:10px 20px;
+}
+
+/* Box Titles */
+.box-title {
+
+    color: var(--dark);
+}
+
+.box-title h2 {
+    margin-bottom: 15px;
+}
+
+/* List Styling */
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #2B547E; /* Navy Blue */
+    color: #fff;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 1em;
+}
