@@ -176,6 +176,13 @@ ul li {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     background-color:#535353 ;
 }
+
+.not-taken button{
+    background-color: var(--clear-color);
+    color: var(--color3);
+    border: 0.5px solid var(--color3);
+    
+}
 .courses{
     display: flex;
     flex-wrap: wrap;

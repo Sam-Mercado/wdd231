@@ -32,6 +32,7 @@ function displayButtons(b){
     b.forEach(courseInfo =>{
         buttonsHTML+=`<button>${courseInfo.subject + courseInfo.number}</button>`;
     });
+    //if course == false then display diffrently
     courseSection.innerHTML=buttonsHTML;    
 }
 
@@ -49,7 +50,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -62,7 +63,7 @@ const courses = [
             'HTML',
             'CSS'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -74,7 +75,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -86,7 +87,7 @@ const courses = [
         technology: [
             'C#'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -100,7 +101,7 @@ const courses = [
             'CSS',
             'JavaScript'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
