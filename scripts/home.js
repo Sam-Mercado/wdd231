@@ -1,7 +1,4 @@
 const filterButtons = document.querySelectorAll('.filter-buttons button');
-// const courseButton = document.querySelectorAll('.course.btn');
-const course = document.querySelector(".courses"); 
-
 
 filterButtons.forEach( button => {
     button.addEventListener('click', () => {
@@ -10,39 +7,111 @@ filterButtons.forEach( button => {
     });
 });
 
+const courseSection = document.querySelector(".courses");
 
-const buttons = [
-    { id: 1, label: 'CSE 110', className: 'course-button', category: 'CSE' },
-    { id: 2, label: 'CSE 111', className: 'course-button', category: 'CSE' },
-    { id: 3, label: 'WDD 130', className: 'course-button', category: 'WDD' },
-    { id: 4, label: 'WDD 131', className: 'course-button', category: 'WDD' },
-    { id: 5, label: 'WDD 231', className: 'course-button', category: 'WDD' }
-];
-
-
-buttons.forEach(buttonObj =>{
-    const newButton = document.createElement('button');
-    newButton.textContent = buttonObj.label;
-    newButton.classList.add(buttonObj.className)
-});
-// Limpiar el div, y crear elementos de una lista 
-// 1:Crear un array que contiene las 6 courses 
-
-// 2: crear una funion que cree botones, 
-// 3: btn= clase y category.
-//4: loop de los contenidos de la lista
 function filterCourses(filter){
-    console.log(filter);
-    console.log(courseButton);
-    courseButton.forEach(course => {
+    //filter courses based on filter|list course based on filter
+    //build , generate the elements
+    //append or add the elements to the document
+    var filterCourses = courses;
+    if(filter!="ALL"){
+        //remove the no necesary elements 
         
-        if(filter=='all'){
-            course.computedStyleMap.display = 'block';
-        } else if (course.getAttribute('data-category') == filter){
-            course.computedStyleMap.display = 'block';
-        } else {course.style.display = 'block'}
+        filterCourses = filterCourses.filter(course => course.subject === filter)
+        console.log(filterCourses);
+        displayButtons(filterCourses);
+
+    }
+}
+ //generate the buttons
+function displayButtons(b){
+    b.forEach(courseInfo =>{
+        courseSection.innerHTML=`<button>${courseInfo.subject + courseInfo.number}</button>`;
     });
 }
+// const courseButton = document.querySelectorAll('.course.btn');
+ 
+
+//code was given. 
+const courses = [
+    {
+        subject: 'CSE',
+        number: 110,
+        title: 'Introduction to Programming',
+        credits: 2,
+        certificate: 'Web and Computer Programming',
+        description: 'This course will introduce students to programming. It will introduce the building blocks of programming languages (variables, decisions, calculations, loops, array, and input/output) and use them to solve problems.',
+        technology: [
+            'Python'
+        ],
+        completed: false
+    },
+    {
+        subject: 'WDD',
+        number: 130,
+        title: 'Web Fundamentals',
+        credits: 2,
+        certificate: 'Web and Computer Programming',
+        description: 'This course introduces students to the World Wide Web and to careers in web site design and development. The course is hands on with students actually participating in simple web designs and programming. It is anticipated that students who complete this course will understand the fields of web design and development and will have a good idea if they want to pursue this degree as a major.',
+        technology: [
+            'HTML',
+            'CSS'
+        ],
+        completed: false
+    },
+    {
+        subject: 'CSE',
+        number: 111,
+        title: 'Programming with Functions',
+        credits: 2,
+        certificate: 'Web and Computer Programming',
+        description: 'CSE 111 students become more organized, efficient, and powerful computer programmers by learning to research and call functions written by others; to write, call , debug, and test their own functions; and to handle errors within functions. CSE 111 students write programs with functions to solve problems in many disciplines, including business, physical science, human performance, and humanities.',
+        technology: [
+            'Python'
+        ],
+        completed: false
+    },
+    {
+        subject: 'CSE',
+        number: 210,
+        title: 'Programming with Classes',
+        credits: 2,
+        certificate: 'Web and Computer Programming',
+        description: 'This course will introduce the notion of classes and objects. It will present encapsulation at a conceptual level. It will also work with inheritance and polymorphism.',
+        technology: [
+            'C#'
+        ],
+        completed: false
+    },
+    {
+        subject: 'WDD',
+        number: 131,
+        title: 'Dynamic Web Fundamentals',
+        credits: 2,
+        certificate: 'Web and Computer Programming',
+        description: 'This course builds on prior experience in Web Fundamentals and programming. Students will learn to create dynamic websites that use JavaScript to respond to events, update content, and create responsive user experiences.',
+        technology: [
+            'HTML',
+            'CSS',
+            'JavaScript'
+        ],
+        completed: false
+    },
+    {
+        subject: 'WDD',
+        number: 231,
+        title: 'Frontend Web Development I',
+        credits: 2,
+        certificate: 'Web and Computer Programming',
+        description: 'This course builds on prior experience with Dynamic Web Fundamentals and programming. Students will focus on user experience, accessibility, compliance, performance optimization, and basic API usage.',
+        technology: [
+            'HTML',
+            'CSS',
+            'JavaScript'
+        ],
+        completed: false
+    }
+]
 
 
 // footer
