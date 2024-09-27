@@ -15,21 +15,26 @@ function filterCourses(filter){
     //append or add the elements to the document
     var filterCourses = courses;
     if(filter!="ALL"){
+
         //remove the no necesary elements 
         
         filterCourses = filterCourses.filter(course => course.subject === filter)
         console.log(filterCourses);
         displayButtons(filterCourses);
 
+    } else{
+        displayButtons(courses);
     }
 }
  //generate the buttons
 function displayButtons(b){
+    let buttonsHTML = '';//temporary variable to store the buttons
     b.forEach(courseInfo =>{
-        courseSection.innerHTML=`<button>${courseInfo.subject + courseInfo.number}</button>`;
+        buttonsHTML+=`<button>${courseInfo.subject + courseInfo.number}</button>`;
     });
+    courseSection.innerHTML=buttonsHTML;    
 }
-// const courseButton = document.querySelectorAll('.course.btn');
+
  
 
 //code was given. 

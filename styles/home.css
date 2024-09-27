@@ -176,11 +176,16 @@ ul li {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     background-color:#535353 ;
 }
+.courses{
+    display: flex;
+    flex-wrap: wrap;
+}
 .courses button{
     background-color:var(--color3);
     color: var(--clear-color);
     font-size: 16px;
     height: 40px;
+    margin: 10px;
 
 }
 
