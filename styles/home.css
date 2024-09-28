@@ -53,12 +53,13 @@ header {
 
 header h1 {
     font-size: 24px;
-    
     display: flex;
     justify-content: center;
     align-items: center;
     
 }
+
+
 
 nav ul {
     list-style: none;
@@ -80,6 +81,19 @@ nav ul li a {
 nav ul li a:hover {
     color: var(--color3);
 }
+
+/* .ham-menu{
+
+} */
+
+div .menu-line{
+    background-color: #fff;
+    margin: 2px;
+    height: 3px;
+    width: 20px;
+    border-radius: 1px;
+}
+
 
 /* Main Content */
 main {
@@ -177,12 +191,6 @@ ul li {
     background-color:#535353 ;
 }
 
-.not-taken button{
-    background-color: var(--clear-color);
-    color: var(--color3);
-    border: 0.5px solid var(--color3);
-    
-}
 .courses{
     display: flex;
     flex-wrap: wrap;
@@ -263,4 +271,16 @@ footer p {
     }
 
     
+}
+
+/* movile css */
+@media only screen and (max-width: 425px){
+    .profile-pic{
+        display: none;
+    }
+    header h1{
+        font-size: 20px;
+    }
+
+
 }
