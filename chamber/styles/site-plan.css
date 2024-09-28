@@ -3,16 +3,38 @@
     --clear:#F4F4F4;
     --dark:#333;
     --primary: #2B547E;
-    --secundary:#446dba7b;
+    --secundary:#446dba;
     --tertiary: #effaff;
     --shadow-1:  0 2px 5px rgba(0, 0, 0, 0.1);
-
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+h1{
+    font-size: 48px;
+}
+h2{
+    font-size: 40px;
+}
+h3{
+    font-size: 32px;
+}
+h4{
+    font-size:24px;
+}
+h5{
+    font-size: 20px;
+}
+h6{
+    font-size: 18px;
+}
+
+p{
+    font-size: 16px;
 }
 
 /* Body and Typography */
@@ -132,6 +154,80 @@ ul li {
     margin-bottom: 10px;
 }
 
+
+
+.design{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 30px 20px;
+}
+.typography{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 50px 20px;
+}
+
+div .color{
+    width: 20%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    margin: 10px;
+}
+
+.primary{
+    color: var(--clear);
+    background-color: var(--primary);
+}
+
+.secondary{
+    background-color: var(--secundary);
+    color: #fff;
+}
+.background{
+    background-color: var(--tertiary);
+    border: solid .5px var(--dark);
+}
+.text-color{
+    background-color: #333;
+    color: #fff;
+}
+.wireframes{
+    padding: 30px;
+}
+
+img.logo{
+    max-width: 50%;
+    width: 100%;
+    margin: 30px;
+}
+
+div.directory-wireframe{
+ display: flex;
+ align-items:start;
+ justify-content: center;
+}
+
+img.desktop{
+    max-width: 60%;
+    width: 100%;
+    height: auto;
+    margin: 5px;
+}
+img.movile{
+    max-width: 30%;
+    margin: 5px;
+}
+
 /* Footer */
 footer {
     text-align: center;
@@ -139,8 +235,7 @@ footer {
     background-color: var(--primary); 
     color: #fff;
     margin-top: 20px;
+    bottom: 0;
 }
 
-footer p {
-    font-size: 1em;
-}
+
