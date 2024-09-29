@@ -60,6 +60,12 @@ header {
     top: 0;
 }
 
+button.nav-btn{
+    width: 100px;
+    color: var(--tertiary);
+    padding: 10px;
+}
+
 header h1 {
     font-size: 2em;
 }
@@ -184,10 +190,10 @@ div .color{
     margin: 10px;
 }
 
-.primary{
+/* .primary{
     color: var(--clear);
     background-color: var(--primary);
-}
+} */
 
 .secondary{
     background-color: var(--secundary);
