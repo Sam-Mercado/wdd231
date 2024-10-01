@@ -114,44 +114,6 @@ section{
     flex-wrap: wrap;
 }
 
-/* business cards */
-
-#user{
-    width: 45px;
-    height: 45px;
-    border-radius: 50px;
-    margin: 10px;
-    
-}
-
-.business-card{
-    background-color: var(--clear);
-    width: 300px;
-    border-radius: 10px;
-    margin-right: 20px;
-    margin-top: 20px;
-}
-.business-card-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center;
-    background-color: var(--primary);
-    color: var(--tertiary);
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-
-}
-
-.card-header-text{
-    margin: 0 15px;
-}
-
-.card-content{
-    padding: 20px;
-}
-
-
 /* Footer */
 footer {
     background-color: var(--primary);

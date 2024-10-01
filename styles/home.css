@@ -62,10 +62,14 @@ header h1 {
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 nav ul li {
-    display: inline-block;
+
     margin: 0 15px;
 }
 
@@ -80,9 +84,21 @@ nav ul li a:hover {
     color: var(--color3);
 }
 
-/* .ham-menu{
 
-} */
+#myButton{
+    font-size: 2rem;
+    background-color: #000;
+    border: none;
+    color: var(--clear-color);
+    cursor: pointer;
+    
+    text-align: right;
+    padding: .25rem 2vw;
+    display: none;
+}
+
+
+
 
 div .menu-line{
     background-color: #fff;
@@ -224,12 +240,17 @@ ul li {
 }
 
 /* Footer */
+#year{
+    color: var(--clear-color);
+}
 footer {
     text-align: center;
     padding: 10px 0;
     background-color: #000;
     color: var(--clear-color);
     margin-top: 20px;
+    height: 60px;
+
 }
 
 footer p {
@@ -267,18 +288,46 @@ footer p {
         max-width: 70%;
         width: 100%;
     }
+    
 
     
 }
 
 /* movile css */
 @media only screen and (max-width: 425px){
-    .profile-pic{
+    .image-title{
         display: none;
     }
     header h1{
         font-size: 20px;
     }
+    #myButton{
+        display: block;
+        width: 100%;
+        max-width: 0;
+        
+    }
+    nav{
+        width: 100%;
+    }
+
+    nav ul{
+        flex-direction: column;
+    }
+
+    nav ul li {
+        padding: 10px;
+    }
+    ul.menuLinks{
+        display: none;
+
+    }
+
+    ul.open{
+        display: block;
+
+    }
+
 
 
 }
