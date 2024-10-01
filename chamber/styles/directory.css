@@ -57,12 +57,32 @@ nav {
     width: 100%;
 }
 
-ul {
-    list-style: none;
+#myButton{
+    font-size: 2rem;
+    background-color: var(--primary);
+    border: none;
+    color: var(--clear);
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+    padding: .25rem 2vw;
+    display: none;
+}
+
+ul{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    list-style: none;
     align-items: center;
+    justify-content: center;
+
+}
+
+
+ul.menuLinks li a{
+   
+    padding: .75rem 2vw;
+    color: var(--clear);
+    text-decoration: none;
 }
 /* main */
 main{
@@ -85,7 +105,7 @@ img.hero{
 }
 section{
     padding:50px;
-    background-color: var(--dark);
+    
     display: flex;
     flex-wrap: wrap;
 }
@@ -165,6 +185,30 @@ footer div {
         height: auto;
         padding-bottom: 20px;
     }
+
+    #logo{
+        display: none;
+    }
+
+    #myButton{
+        display: block;
+    }
+    ul{
+        flex-direction: column;
+    }
+    ul.menuLinks{
+        display: none;
+
+    }
+    ul.open{
+        display: block;
+
+    }
+
+    li{
+        padding: 10px;
+    }
+
     footer {
         flex-direction: column; 
     }

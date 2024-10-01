@@ -5,10 +5,11 @@ async function getProphetData(url){
     const response = await fetch(url);
     const data = await response.json();
     // console.table(data.prophets);
-    displayProphets(data.prophets);
+    displayProphets(data.prophets);    
 }
 
 getProphetData();
+
 
 const displayProphets = (prophets)=>{
     //card build 
@@ -18,16 +19,21 @@ const displayProphets = (prophets)=>{
         let portrait = document.createElement('img');
 
         fullName.textContent = `${prophet.name} ${prophet.lastname}`;
-
+        //build the image
         portrait.setAttribute('src', prophet.imageurl);
         portrait.setAttribute('alt', `Portrait of ${prophet.name}____`)
+        portrait.setAttribute('loading', 'lazy');
         portrait.setAttribute('width', '340');
         portrait.setAttribute('height', '440');
 
+        //append the section(card)
         card.appendChild(fullName);
         card.appendChild(portrait);
 
-        card.appendChild(card);
+        cards.appendChild(card);
 
     });
+
+    
+
 }
