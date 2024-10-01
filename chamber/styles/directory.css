@@ -32,6 +32,8 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100%;
 }
 
 header li, footer p {
@@ -46,7 +48,7 @@ header li:hover {
     color:#6ea1ff;
 }
 
-#logo {
+#logo, #logo2{
     width: auto;
     height: 40px;
     margin: 20px 0;
@@ -87,6 +89,8 @@ ul.menuLinks li a{
 /* main */
 main{
     background-color: var(--tertiary);
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 .hero-img{
     padding: 0 50px;
@@ -151,23 +155,25 @@ section{
 /* Footer */
 footer {
     background-color: var(--primary);
-    padding: 10px 20px;
+    padding: 20px 20px;
+    margin: 0;
     display: flex;
     flex-direction: row; 
     align-items: center;
     justify-content: space-between;
     text-align: center;
     width: 100%;
-    position: fixed;
+    height: auto;
+    position: absolute;
     bottom: 0;
 }
 
 footer div {
-    margin-bottom: 10px;
+    
     text-align: left;
 }
 
-#icon {
+.icon {
     width: 45px;
     height: 45px;
 }
@@ -179,19 +185,24 @@ footer div {
     margin: 20px 0;
 }
 
+
+
 @media only screen and (max-width: 700px) {
     header{
-        flex-direction: column;
+        flex-direction: row;
         height: auto;
         padding-bottom: 20px;
+       
     }
 
     #logo{
         display: none;
     }
 
+
     #myButton{
         display: block;
+        
     }
     ul{
         flex-direction: column;
@@ -211,11 +222,14 @@ footer div {
 
     footer {
         flex-direction: column; 
+
+        margin-bottom: 0;
     }
 
     footer div {
         margin-bottom: 10px;
         text-align: center;
+        
     }
     
 
