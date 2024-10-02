@@ -22,7 +22,7 @@ document.getElementById('last-update').textContent = `Last Update ${lastUpdated}
 //where are we pulling the information from 
 //and where do we want to display it
 
-const data = 'data/members.json';
+const data = './data/members.json';
 const cards = document.querySelector('.business-card')
 
 async function getBusinessInfo(file) {
