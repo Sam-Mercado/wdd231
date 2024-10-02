@@ -28,7 +28,7 @@ const aCourse = {
       if (sectionIndex >= 0) {
         if (add) {
           this.sections[sectionIndex].enrolled++;
-        } else {
+        } else { 
           this.sections[sectionIndex].enrolled--;
         }
         renderSections(this.sections);
