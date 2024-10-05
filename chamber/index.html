@@ -24,9 +24,10 @@
     <!-- Favicon -->
     <link rel="icon" href="images/book-svgrepo-com.svg" type="image/icon">    
 
-    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/components.css">
     <link rel="stylesheet" href="styles/home.css">
-    <script src="scripts/directory.js" defer></script>
+    <!-- <script src="scripts/directory.js" defer></script> -->
+    <script src="scripts/home.js" defer></script>
 </head>
 <body>
     <header>
@@ -50,25 +51,27 @@
                 <p>the biggest bolivian chamber of commerce</p>
             </div>
         </section>
-        <section>
+        <section class="content-container">
             <div class="call-to-action">
                 <h4>The Bolivia Business Hub serves as a platform for local businesses to connect, share resources, and promote economic growth in Bolivia.</h4>
                 <button class="btn">join</button>
             </div>
         </section>
-        <section>
+        <section class="content-container">
+            <h4>Some of Our Members</h4>
+            <div id="gold-members">
+
+            </div>
+        </section>
+        <section class="content-container" >
             <h3>Events Comming up</h3>
             <div id="current-event">
             </div>
         </section>
-        <section >
+        <section class="content-container" >
             <h3>Weather</h3>
-            <div>
-                <p>temperature:<span id="current-temp"></span></p>
-                <figure>
-                    <img id="weather-icon" src="" alt="">
-                    <figcaption></figcaption>
-                </figure>
+            <div id="weather">
+
 
             </div>
         </section>

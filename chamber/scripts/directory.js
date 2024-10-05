@@ -18,35 +18,42 @@ const lastUpdated = today.toLocaleDateString('en-US', option);
 document.getElementById('last-update').textContent = `Last Update ${lastUpdated}`;
 
 
-
-//where are we pulling the information from 
-//and where do we want to display it
-
-const data = './data/members.json';
-const cards = document.querySelector('.business-card')
-
-async function getBusinessInfo(file) {
-    const response = await fetch(file);
+//busienss cards getting info
+async function getBusiness(){
+    const response = await fetch('./data/members.json');
     const data = await response.json();
-    displayBusiness(file);
+    displayBusiness(data.companies);
 }
 
-getBusinessInfo();
+getBusiness();
 
-const displayBusiness = (busineses) =>{
-    //create a card for each company
-    busineses.forEach((company)=>{
-        let card = documnt.createElement('section');
 
-        card.innerHTML = `<h4>${company.name}</h4>`;
+//building business card
+const cards = document.querySelector('#business-cards')
+const displayBusiness = (companies) => {
+    companies.forEach((company) => {
+        //creating the div (box)
+        let card = document.createElement('div');
+        card.classList.add('card-container');
 
-        card.innerHTML = `<p>${company.description}</p>`;
-        card.innerHTML = `<p>${company.address}</p>`;
-        card.innerHTML = `<p>${company.phone}</p>`;
-        card.innerHTML = `<p>${company.website}</p>`;
+        // card.className = 'card-container';
+        let companyLogo = document.createElement('img');//fing a way to add a src and atl
+        let companyName = document.createElement('h6');
+        companyName.textContent = `${company.name}`;
+        let companyAddress = document.createElement('p');
+        let websiteCo = document.createElement('p');
+        websiteCo.innerHTML = `<a href ='${company.website}'>${company.website}</a>`
+        companyAddress.textContent = `${company.address}`;
+        let phoneNum = document.createElement('p');
+        phoneNum.textContent = `${company.phone}`;
+      
+        //build the image
+        card.appendChild(companyLogo);
+        card.appendChild(companyName);
+        card.appendChild(phoneNum);
+        card.appendChild(companyAddress);
+        card.appendChild(websiteCo);
 
         cards.appendChild(card);
-        
     });
 }
-

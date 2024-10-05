@@ -3,17 +3,20 @@ const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 
-const myKey ='ffe61aadd59c22f5b4f49d97471830f4';
-const myLat ='49.759654069316746';
-const myLon ='6.644248775359994';
+const myKey ='e1d3b62518b56abd4811d6a72b8ced76';
+const myLat ='49.75';
+const myLon ='6.64';
 
 
-const myUrl = `//api.openweathermap.org/data/2.5/?lat=${myLat}&lon=${myLon}&appid=${myKey}`;
+const myUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLon}&appid=${myKey}`;
 
 
-async function apiFetch(){
+//https://api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLon}appid=${myKey}&units=imperial
+
+
+async function apiFetch(url){
     try {
-        const response = await fetch(myUrl);
+        const response = await fetch(url);
         if (response.ok){
             const data = await response.json();
             console.log(data);
@@ -27,6 +30,9 @@ async function apiFetch(){
 
 };
 
+apiFetch(myUrl);
+
+
 function displayResults(d){
     indexMain.innerHTML = d.name;
     captionDesc.innerHTML=d.weather[0].description;
@@ -38,5 +44,4 @@ function displayResults(d){
 
 }
 
-apiFetch();
 

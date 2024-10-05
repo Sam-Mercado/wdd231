@@ -1,0 +1,300 @@
+
+:root{
+    --clear:#F4F4F4;
+    --dark:#333;
+    --primary: #154360;
+    --secundary:#446dba;
+    --tertiary: #effaff;
+    --shadow-1:  0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 { font-size: 48px; }
+h2 { font-size: 40px; }
+h3 { font-size: 32px; }
+h4 { font-size: 24px; }
+h5 { font-size: 20px; }
+h6 { font-size: 18px; }
+p { font-size: 16px; }
+
+header {
+    height: 60px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.263);
+    background-color: var(--primary);
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+header li, footer p {
+    color: var(--clear);
+}
+
+header li {
+    transition: color 0.4s ease;
+}
+
+#logo, #logo2{
+    width: auto;
+    height: 40px;
+    margin: 20px 0;
+}
+
+nav {
+    max-width: 500px;
+    width: 100%;
+}
+
+/* the #myButton is hiding the hambrguer menu */
+#myButton{
+    font-size: 2rem;
+    background-color: var(--primary);
+    border: none;
+    color: var(--clear);
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+    padding: .25rem 2vw;
+    display: none;
+}
+ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+ul.menuLinks li a{
+    padding: .75rem 2vw;
+    color: var(--clear);
+    text-decoration: none;
+}
+
+ul.menuLinks li a:hover{
+    color: var(--secundary);
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary);
+    padding: 20px;
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    margin-top: auto;
+
+}
+
+footer div {
+    
+    text-align: left;
+}
+
+.icon {
+    width: 45px;
+    height: 45px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+/* sections */
+.content-container{
+    margin: 8%;
+}
+
+/* buttons */
+.btn{
+    margin: 30px 20px;
+    height: 45px;
+    width: 200px;
+    padding: 10px 20px;
+    color: var(--clear);
+    background-color: var(--secundary);
+    border-radius: 20px;
+    outline: none;
+    border-width: 0;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+
+    transition: background-color .5;
+}
+.btn:hover{
+    background-color: #182742;
+  }
+
+
+
+@media only screen and (max-width: 700px) {
+    header{
+        flex-direction: row;
+        height: auto;
+        padding-bottom: 20px;
+       
+    }
+
+    #logo{
+        display: none;
+    }
+
+
+    #myButton{
+        display: block;
+        
+    }
+    ul{
+        flex-direction: column;
+    }
+    ul.menuLinks{
+        display: none;
+
+    }
+    ul.open{
+        display: block;
+
+    }
+
+    li{
+        padding: 10px;
+    }
+
+    footer {
+        flex-direction: column; 
+
+        margin-bottom: 0;
+    }
+
+    footer div {
+        margin-bottom: 10px;
+        text-align: center;
+        
+    }
+    
+
+    .social {
+        flex-direction: row; 
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    header{
+        flex-direction: row;
+        height: auto;
+        padding-bottom: 20px;
+       
+    }
+
+    #logo{
+        display: none;
+    }
+
+
+    #myButton{
+        display: block;
+        
+    }
+    ul{
+        flex-direction: column;
+    }
+    ul.menuLinks{
+        display: none;
+
+    }
+    ul.open{
+        display: block;
+
+    }
+
+    li{
+        padding: 10px;
+    }
+
+    footer {
+        flex-direction: column; 
+
+        margin-bottom: 0;
+    }
+
+    footer div {
+        margin-bottom: 10px;
+        text-align: center;
+        
+    }
+    
+
+    .social {
+        flex-direction: row; 
+    }
+}
+
+
+
+@media only screen and (max-width: 700px) {
+    header{
+        flex-direction: row;
+        height: auto;
+        padding-bottom: 20px;
+       
+    }
+
+    #logo{
+        display: none;
+    }
+
+
+    #myButton{
+        display: block;
+        
+    }
+    ul{
+        flex-direction: column;
+    }
+    ul.menuLinks{
+        display: none;
+
+    }
+    ul.open{
+        display: block;
+
+    }
+
+    li{
+        padding: 10px;
+    }
+
+    footer {
+        flex-direction: column; 
+
+        margin-bottom: 0;
+    }
+
+    footer div {
+        margin-bottom: 10px;
+        text-align: center;
+        
+    }
+    
+
+    .social {
+        flex-direction: row; 
+    }
+}
