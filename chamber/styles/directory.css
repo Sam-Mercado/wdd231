@@ -53,7 +53,7 @@ section{
     justify-content: space-between;
     align-items: center;
     margin-top: 10px;
-    background-color: #fff;
+    
 }
 .card-container{
     border-radius: 10px;
@@ -65,6 +65,7 @@ section{
     min-width: 300px;
     display: flex;
     flex-direction: row;
+    background-color: #fff;
 }
 .card-container img{
     width: 45px;
