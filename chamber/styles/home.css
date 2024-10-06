@@ -1,4 +1,11 @@
-
+:root{
+    --clear:#F4F4F4;
+    --dark:#333;
+    --primary: #154360;
+    --secundary:#446dba;
+    --tertiary: #effaff;
+    --shadow-1:  0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
 header{
     margin: 0;
@@ -61,7 +68,6 @@ div h4{
     border-width: 0;
     box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
 
-    transition: background-color .5;
 }
 .btn:hover{
     background-color: #182742;
