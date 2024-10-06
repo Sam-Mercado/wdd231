@@ -126,6 +126,10 @@ footer div {
 }
 
 /* buttons */
+.btn a{
+    color: #fff;
+    text-decoration: none;
+}
 .btn{
     margin: 30px 20px;
     height: 45px;
@@ -141,6 +145,8 @@ footer div {
 .btn:hover{
     background-color: #182742;
   }
+
+
 
 
 
