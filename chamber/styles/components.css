@@ -69,10 +69,7 @@ nav {
     display: none;
 }
 
-img{
-    background-color: var(--primary);
-    color: var(--primary);
-}
+
 ul{
     display: flex;
     list-style: none;
