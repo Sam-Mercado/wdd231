@@ -46,7 +46,7 @@ const myKey = 'e1d3b62518b56abd4811d6a72b8ced76';
 const myLat = '-17.366832637140057';
 const myLon = '-66.19878838429028';
 
-const myUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLon}&appid=${myKey}`;
+const myUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${myLat}&lon=${myLon}&appid=${myKey}`;
 
 
 async function weatherFetch(){
@@ -67,67 +67,71 @@ async function weatherFetch(){
 weatherFetch();
 
 function displayResults(d){
+    console.log(d)
+    for (let i = 0; i < 3; i++) {
+        let card = document.createElement('div');
+        card.classList.add('weather-container');
+        let image = document.createElement('img');
+        let city = document.createElement('h6');
+        let currentTemp = document.createElement('p');
+        let description = document.createElement('p');
 
-    let card = document.createElement('div');
-    card.classList.add('weather-container');
-    let image = document.createElement('img');
-    let city = document.createElement('h6');
-    let currentTemp = document.createElement('p');
-    let description = document.createElement('p');
+        city.innerHTML = `${d.city.name},${d.city.country}`;
+        currentTemp.innerHTML = `${d.list[i].main.temp.toString().slice(1)}°F`;
+        description.innerHTML = d.list[i].weather[0].description;
+        image.innerHTML = `https://openweathermap.org/img/wn/${d.list[i].weather[0].icon}@2x.png`;
+        image.src = `https://openweathermap.org/img/wn/${d.list[i].weather[0].icon}@2x.png`;
+        image.setAttribute('alt', d.list[i].weather[0].description);
 
-    city.innerHTML = `${d.name},${d.sys.country}`;
-    currentTemp.innerHTML = `${d.main.temp}&deg;F`;
-    description.innerHTML = d.weather[0].description;
-    image.innerHTML = `https://openweathermap.org/img/wn/${d.weather[0].icon}@2x.png`;
-    image.src = `https://openweathermap.org/img/wn/${d.weather[0].icon}@2x.png`;
-    image.setAttribute('alt', d.weather[0].description);
+        card.appendChild(city);
+        card.appendChild(image)
+        card.appendChild(currentTemp);
+        card.appendChild(description);
 
-    card.appendChild(city);
-    card.appendChild(image)
-    card.appendChild(currentTemp);
-    card.appendChild(description);
+        indexCard.appendChild(card);
 
-    indexCard.appendChild(card);
-
+    }
 }
 
 
-const goldMembers = document.querySelector('#gold-members');
-
-async function getGoldMember() {
-    const response = await fetch("./data/members.json"); 
+async function getBusiness(){
+    const response = await fetch('./data/members.json');
     const data = await response.json();
-    displayGoldMember(data.companies);
+    displayBusiness(data.companies);
+}
+
+getBusiness();
+
+
+//building business card
+const cards = document.querySelector('#gold-members')
+const displayBusiness = (companies) => {
+    companies.forEach((company) => {
+        //creating the div (box)
+        let card = document.createElement('div');
+        card.classList.add('card-container');
+
+        // card.className = 'card-container';
+        let companyLogo = document.createElement('img');//fing a way to add a src and atl
+        let companyName = document.createElement('h6');
+        companyName.textContent = `${company.name}`;
+        let companyAddress = document.createElement('p');
+        let websiteCo = document.createElement('p');
+        websiteCo.innerHTML = `<a href ='${company.website}'>${company.website}</a>`
+        companyAddress.textContent = `${company.address}`;
+        let phoneNum = document.createElement('p');
+        phoneNum.textContent = `${company.phone}`;
+      
+        //build the image
+        if(company.membershipLevel === 1){
+            card.appendChild(companyLogo);
+            card.appendChild(companyName);
+            card.appendChild(phoneNum);
+            card.appendChild(companyAddress);
+            card.appendChild(websiteCo);
     
+            cards.appendChild(card);
+        }
+
+    });
 }
-
-async function displayGoldMember(d){
-    d.forEach((element) =>{
-            let card = document.createElement('div');
-            card.classList.add('card-container');
-
-            // card.className = 'card-container';
-            let companyLogo = document.createElement('img');//fing a way to add a src and atl
-            let companyName = document.createElement('h6');
-            companyName.textContent = `${element   .name}`;
-            let companyAddress = document.createElement('p');
-            let websiteCo = document.createElement('p');
-            websiteCo.innerHTML = `<a href ='${element.website}'>${company.website}</a>`
-            companyAddress.textContent = `${element.address}`;
-            let phoneNum = document.createElement('p');
-            phoneNum.textContent = `${element.phone}`;
-        
-            //build the image
-            if (element.membershipLevel === 1){
-                card.appendChild(companyLogo);
-                card.appendChild(companyName);
-                card.appendChild(phoneNum);
-                card.appendChild(companyAddress);
-                card.appendChild(websiteCo);
-
-                goldMembers.appendChild(card);
-            }
-
-    } );    
-}
-

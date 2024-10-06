@@ -37,7 +37,7 @@ main{
 
 .hero-btn{
     position: absolute;
-    bottom: 10%;
+    bottom: 20%;
     right: 10%;
 }
 
@@ -64,8 +64,6 @@ section{
     min-width: 300px;
     display: flex;
     flex-direction: row;
-
-
 }
 .card-container img{
     width: 45px;
@@ -81,3 +79,64 @@ section{
     
 }
 
+@media only screen and (max-width:1000px){
+    .hero-btn{
+        position: absolute;
+        bottom: 30%;
+        right: 10%;
+    }
+    .card-container{
+        max-width: 320px;
+        min-width: 300px;
+        flex-direction: column;
+    }
+    .card-container img{
+        width: 280px;
+        height: 280px;
+    }
+    .card-container h6{
+        padding-top: 10px;
+    }
+
+    .card-container p{
+        margin: 0;
+        padding: 5px 15px;
+    }
+}
+
+@media only screen and (max-width: 897px){
+    .hero-btn{
+        position: absolute;
+        bottom: 30%;
+        right: 5%;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    main, body{
+        margin: 0;
+        padding: 0;
+    }
+    section{
+        margin: 0 10px;
+    }
+
+    .hero-btn{
+        position:relative;
+     }
+     .hero{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
+     .card-container{
+        margin:0 10px;
+     }
+}
+
+@media only screen and (max-width: 375px){
+    .hero h1{
+        font-size: 28px;
+    }
+}

@@ -4,7 +4,7 @@
       "name": "Tech Solutions",
       "address": "123 Innovation Blvd, La Paz, Bolivia",
       "phone": "+591 76543210",
-      "website": "https://www.techsolutions.com",
+      "website": "techsolutions.com",
       "image": "https://img.icons8.com/ios/50/electronics.png",
       "membershipLevel": 3,
       "description": "Tech Solutions offers innovative software services for businesses and startups."
@@ -13,7 +13,7 @@
       "name": "Green Energy Corp",
       "address": "456 Solar Ave, Cochabamba, Bolivia",
       "phone": "+591 71234567",
-      "website": "https://www.greenenergy.com",
+      "website": "greenenergy.com",
       "image": "greenenergy-logo.png",
       "membershipLevel": 2,
       "description": "Leading provider of solar energy solutions in Bolivia."
@@ -22,7 +22,7 @@
       "name": "Andes Manufacturing",
       "address": "789 Industrial Rd, Sucre, Bolivia",
       "phone": "+591 62345678",
-      "website": "https://www.andesmanufacturing.com",
+      "website": "andesmanufacturing.com",
       "image": "andesmanufacturing-logo.png",
       "membershipLevel": 1,
       "description": "Specializes in textile production and export."
@@ -31,7 +31,7 @@
       "name": "Bolivia Business Consulting",
       "address": "321 Business St, Santa Cruz, Bolivia",
       "phone": "+591 61012345",
-      "website": "https://www.bbconsulting.com",
+      "website": "bbconsulting.com",
       "image": "bbconsulting-logo.png",
       "membershipLevel": 3,
       "description": "Offering strategic business consulting services."
@@ -40,7 +40,7 @@
       "name": "Andean Adventures",
       "address": "159 Adventure Lane, Potosi, Bolivia",
       "phone": "+591 72012345",
-      "website": "https://www.andeanadventures.com",
+      "website": "andeanadventures.com",
       "image": "andeanadventures-logo.png",
       "membershipLevel": 2,
       "description": "Travel agency specializing in eco-tourism and adventure tours."
@@ -49,7 +49,7 @@
       "name": "Healthy Foods Co.",
       "address": "246 Market St, Tarija, Bolivia",
       "phone": "+591 73334567",
-      "website": "https://www.healthyfoods.com",
+      "website": "healthyfoods.com",
       "image": "healthyfoods-logo.png",
       "membershipLevel": 1,
       "description": "Organic food producer and supplier."
@@ -58,7 +58,7 @@
       "name": "Bolivian Bank",
       "address": "987 Finance Ave, Oruro, Bolivia",
       "phone": "+591 65412345",
-      "website": "https://www.bolivianbank.com",
+      "website": "bolivianbank.com",
       "image": "bolivianbank-logo.png",
       "membershipLevel": 3,
       "description": "Providing banking and financial services across Bolivia."
@@ -67,7 +67,7 @@
       "name": "Altiplano Logistics",
       "address": "245 Transport Rd, El Alto, Bolivia",
       "phone": "+591 78901234",
-      "website": "https://www.altiplanologistics.com",
+      "website": "altiplanologistics.com",
       "image": "altiplanologistics-logo.png",
       "membershipLevel": 2,
       "description": "Specialized in international shipping and cargo management throughout South America."
