@@ -11,7 +11,7 @@
     <title>Samuel M|WDD231</title>
     <link rel="stylesheet" href="styles/home.css">
     <!-- <link rel="stylesheet" href="styles/normalize.css"> -->
-    <script src="scripts/home.js" defer></script>
+    <script src="scripts/home.js"  defer></script>
 </head>
 <body>
     <header>
@@ -47,10 +47,18 @@
         <section>
             <div class="box-title">
                 <h2>Sucre, Bolivia</h2>
+                
             </div>
             <div class="card-content card-img">
                 <img src="images/sucre.jpg" alt="sucre City Bolivia Chuquisaca">
-                <p>Sucre, Bolivia</p>
+                <div class="text-flagBox">
+                    <p>Sucre, Bolivia</p>
+                    <div class="bolivianflag">
+                        <div class="red"></div>
+                        <div class="yellow"></div>
+                        <div class="green"></div>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="certificate-content">
@@ -65,8 +73,17 @@
                 </div>
                 <div class="line"></div>
 
-                <div class="courses">                    
+                <div class="courses">     
+
                 </div>
+                <!-- dialog -->
+                <dialog id="mydialog">
+                    <div>
+                      <h2>Sample Title</h2>
+                      <button>X</button>
+                    </div>
+                    <p></p>
+                  </dialog>
             </div>
         </section>
     </main>
@@ -74,5 +91,6 @@
     <footer>
         <p id="year"></p>
     </footer>
+    
 </body>
 </html>
