@@ -26,6 +26,8 @@
 
     <link rel="stylesheet" href="styles/components.css">
     <link rel="stylesheet" href="styles/join.css">
+
+    <script src="scripts/components.js" defer></script>
 </head>
 <body>
     <header>
@@ -35,14 +37,90 @@
             <ul class="menuLinks">
                 <li><a href="index.html" title="home">home</a></li>
                 <li><a href="directory.html" title="business">directory</a></li>
-                <li><a href="#" title="join">join</a></li>
+                <li><a href="join.html" title="join">join</a></li>
                 <li><a href="#" title="about">about</a></li>
                 <li><a href="#" title="events">events</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Become a Member</h1>
+        
+        <section id="formSection">
+            <h3>Fill the Form to Join</h3>
+            <div class="registration-box">
+                <img id="formImg" src="images/peta.jpg" alt="trufi chambers of commerce">  
+                <form method="GET" action="thankyou.html" class="join-form">
+                    <h6>Become a Member</h6>
+                
+                    <!-- First Name -->
+                    <label for="first-name">Applicant's First Name:</label>
+                    <input type="text" id="first-name" name="first-name" required title="Your First Name" autocomplete="given-name" placeholder="Samuel">
+                
+                    <!-- Last Name -->
+                    <label for="last-name">Applicant's Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" required title="Your Last Name" autocomplete="family-name" placeholder="Mercado">
+                    <!-- Organizational Title -->
+                    <label for="org-title">Applicant's Organizational Title:</label>
+                    <input type="text" id="org-title" name="org-title" title="Your Organizational Title" autocomplete="organization-title" 
+                        pattern="^[A-Za-z\- ]{7,}$" placeholder="CEO" required>
+                    <!-- Email -->
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required title="Your Email Address" autocomplete="email" placeholder="example@domain.com">
+                    <!-- Mobile Phone Number -->
+                    <label for="phone">Mobile Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required title="Your Mobile Phone Number" autocomplete="tel" placeholder="987-555-1234">
+                    <!-- Business/Organization's Name -->
+                    <label for="business-name">Business/Organization's Name:</label>
+                    <input type="text" id="business-name" name="business" required title="Your Business Name" autocomplete="organization" placeholder="Tech Sead">
+                    <!-- Membership Level -->
+                    <label for="membership">Membership Level:</label>
+                    <select id="membership" name="membership" required>
+                        <option value="">Select a Membership Level</option>
+                        <option value="np">NP Membership (Non-Profit, No Fee)</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                    <!-- Business/Organization's Description -->
+                    <label for="description">What do you do?</label>
+                    <textarea id="description" name="description" rows="4" cols="50" title="Describe your business" placeholder="Describe your work..."></textarea>
+                
+                    <!-- Timestamp (Hidden Field) -->
+                    <label for="timestamp">
+                        <input type="hidden" id="timestamp" name="timestamp" value="">
+                    </label>
+                
+                    <input id="btn" class="btn" type="submit" value="Join">
+                
+                </form>
+            </div>
+            <div>
+                <h3>Membership Level?</h3>
+            <div class="membership-content">
+                <div>
+                    <img id="img1" src="images/donation.png" alt="non profit">
+                    <h6>Non Profit Membership Level</h6>
+                    <button class="card-btn">learn more</button>
+                </div>
+                <div>
+                    <img id="img2" src="images/coin.png" alt="bronce icon">
+                    <h6>Bronse Membership Level</h6>
+                    <button class="card-btn">learn more</button>
+                </div>
+                <div> 
+                    <img id="img3" src="images/silver-badge.png" alt="silver icon">
+                    <h6>Silver Membership Level</h6>
+                    <button class="card-btn">learn more</button>
+                </div>
+                <div>
+                    <img id="img4" src="images/gold-coin.png" alt="gold">
+                    <h6>Gold Membership Level</h6>
+                    <button class="card-btn">learn more</button>
+                </div>
+            </div>
+            </div>
+        </section>
+
     </main>
     <footer>
         <div>
