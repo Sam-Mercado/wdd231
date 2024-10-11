@@ -115,7 +115,7 @@ h3{
     border-radius: 10px;
     background-color: #fffcef;
     margin-bottom: 25px;
-   /* transition: transform 0.3s ease; */
+   
 }
 .card:hover {
     animation: glow 2s infinite ease-in-out;
