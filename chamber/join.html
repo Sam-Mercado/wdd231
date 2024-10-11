@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="styles/join.css">
 
     <script src="scripts/components.js" defer></script>
+    <script src="scripts/join.js" defer> </script>
 </head>
 <body>
     <header>
@@ -48,7 +49,7 @@
         <section id="formSection">
             <h3>Fill the Form to Join</h3>
             <div class="registration-box">
-                <img id="formImg" src="images/peta.jpg" alt="trufi chambers of commerce">  
+                <img id="formImg" src="images/peta.jpg" alt="trufi chasmbers of commerce">  
                 <form method="GET" action="thankyou.html" class="join-form">
                     <h6>Become a Member</h6>
                 
@@ -62,7 +63,7 @@
                     <!-- Organizational Title -->
                     <label for="org-title">Applicant's Organizational Title:</label>
                     <input type="text" id="org-title" name="org-title" title="Your Organizational Title" autocomplete="organization-title" 
-                        pattern="^[A-Za-z\- ]{7,}$" placeholder="CEO" required>
+                         placeholder="CEO" >
                     <!-- Email -->
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required title="Your Email Address" autocomplete="email" placeholder="example@domain.com">
@@ -81,11 +82,11 @@
                         <option value="silver">Silver Membership</option>
                         <option value="gold">Gold Membership</option>
                     </select>
-                    <!-- Business/Organization's Description -->
+                   
                     <label for="description">What do you do?</label>
                     <textarea id="description" name="description" rows="4" cols="50" title="Describe your business" placeholder="Describe your work..."></textarea>
                 
-                    <!-- Timestamp (Hidden Field) -->
+                  
                     <label for="timestamp">
                         <input type="hidden" id="timestamp" name="timestamp" value="">
                     </label>
@@ -96,29 +97,15 @@
             </div>
             <div>
                 <h3>Membership Level?</h3>
-            <div class="membership-content">
-                <div>
-                    <img id="img1" src="images/donation.png" alt="non profit">
-                    <h6>Non Profit Membership Level</h6>
-                    <button class="card-btn">learn more</button>
+                <div class="membership-content"></div>
+                <dialog  id="modal" class="modal">
+                    <div>
+                        <button>X</button>
+                        <h2>Sample Title</h2>
+                    </div>
+                    <p></p>
+                    </dialog>
                 </div>
-                <div>
-                    <img id="img2" src="images/coin.png" alt="bronce icon">
-                    <h6>Bronse Membership Level</h6>
-                    <button class="card-btn">learn more</button>
-                </div>
-                <div> 
-                    <img id="img3" src="images/silver-badge.png" alt="silver icon">
-                    <h6>Silver Membership Level</h6>
-                    <button class="card-btn">learn more</button>
-                </div>
-                <div>
-                    <img id="img4" src="images/gold-coin.png" alt="gold">
-                    <h6>Gold Membership Level</h6>
-                    <button class="card-btn">learn more</button>
-                </div>
-            </div>
-            </div>
         </section>
 
     </main>
