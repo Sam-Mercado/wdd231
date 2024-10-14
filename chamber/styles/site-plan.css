@@ -248,7 +248,10 @@ img.movile{
     max-width: 30%;
     margin: 5px;
 }
-
+.movile{
+    width: 80px;
+    rotate: 90px;
+}
 /* Footer */
 footer {
     text-align: center;
