@@ -7,7 +7,7 @@
         },
         {
             "category": "Bronze Membership Level",
-            "image": "./images/bronze.png",
+            "image": "images/bronze.png",
             "description": "Entry-level membership offering basic benefits and access to limited events and resources."
         },
         {
