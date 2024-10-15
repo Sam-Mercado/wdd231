@@ -98,8 +98,9 @@ footer {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    position: relative;
-    margin-top: auto;
+    position:relative;
+    bottom: 0;
+    margin-top:auto;
 
 }
 
@@ -147,113 +148,105 @@ footer div {
   }
 
 
-
-
-
-@media only screen and (max-width: 700px) {
-    header{
-        flex-direction: row;
-        height: auto;
-        padding-bottom: 20px;
-       
-    }
-
-    #logo{
-        display: none;
-    }
-
-
-    #myButton{
-        display: block;
-        
-    }
-    ul{
-        flex-direction: column;
-    }
-    ul.menuLinks{
-        display: none;
-
-    }
-    ul.open{
-        display: block;
-
-    }
-
-    li{
-        padding: 10px;
-    }
-
-    footer {
-        flex-direction: column; 
-
-        margin-bottom: 0;
-    }
-
-    footer div {
-        margin-bottom: 10px;
-        text-align: center;
-        
-    }
+#sidebarAndMain{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 60px 700px ;
+}
+#sidebar{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color: #a1c1fc;
+    height: 800px;
+    box-shadow: 0px 2px 10px  #182742;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 5px;
+}
+#sidebar p{
+    padding: 20px;
+    margin: 0 20px;
+}
+#main{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+#companiesOnBoard{
+    margin-bottom: auto;
+}
+#companiesOnBoard ul{
+    display: block;
+}
+#companiesOnBoard li{
     
-
-    .social {
-        flex-direction: row; 
-    }
+    padding: 5px 0;
 }
 
-@media only screen and (max-width: 700px) {
-    header{
-        flex-direction: row;
-        height: auto;
-        padding-bottom: 20px;
-       
-    }
+/* Calendar */
 
-    #logo{
-        display: none;
-    }
+.calendar {
+    width: 300px;
+    margin-top: auto;
+    margin-bottom: 100px;
+}
 
+.calendar-header {
+    text-align: center;
+    padding: 10px;
+    background-color: #154360;
+    color: #fff;
+}
 
-    #myButton{
-        display: block;
-        
-    }
-    ul{
-        flex-direction: column;
-    }
-    ul.menuLinks{
-        display: none;
+.calendar-header button {
+    background-color: #154360;
+    color: #fff;
+    border: none;
+    padding: auto;
+    cursor: pointer;
+}
 
-    }
-    ul.open{
-        display: block;
+.days div, .day-names div {
+    text-align: center;
+    padding: auto 5px;
+    border: 1px solid #ddd;
+}
 
-    }
+.days div {
+    width: 42px;
+}
 
-    li{
-        padding: 10px;
-    }
+.days {
+    display: flex;
+    flex-wrap: wrap;
+}
 
-    footer {
-        flex-direction: column; 
+.day-names div {
+    width: 42px;
+}
 
-        margin-bottom: 0;
-    }
+.day-names {
+    display: flex;
+    background-color: #f0f0f0;
+}
 
-    footer div {
-        margin-bottom: 10px;
-        text-align: center;
-        
-    }
-    
-
-    .social {
-        flex-direction: row; 
-    }
+.today {
+    background-color: lightgreen;
+}
+.busPic{
+    width: 200px;
+    height: auto;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #021029af;
 }
 
 
-
 @media only screen and (max-width: 700px) {
     header{
         flex-direction: row;
@@ -302,5 +295,12 @@ footer div {
 
     .social {
         flex-direction: row; 
+    }
+    #sidebarAndMain{
+        display: flex;
+        flex-direction: column;
+    }
+    #sidebar h6{
+        margin-top: 100px;
     }
 }
