@@ -1,0 +1,20 @@
+{
+    "products": [
+      {
+        "title": "Ingles Basico",
+        "image": "./Images/product1.png",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+      {
+        "title": "Ingles Intermedio",
+        "image": "./Images/product2.png",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+      {
+        "title": "Mentorias",
+        "image": "./Images/product3.png",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      }
+    ]
+  }
+  
