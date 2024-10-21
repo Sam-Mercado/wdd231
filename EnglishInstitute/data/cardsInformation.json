@@ -38,6 +38,20 @@
       "description": "Nunca pensé que aprender inglés podría ser tan fácil y divertido. Las clases son dinámicas y me siento más segura al hablar. ¡Recomendadísimo!"
     }
   ],
+  "social": [
+    {
+      "name": "facebook",
+      "image": "./Images/facebook-svgrepo-com.svg"
+    },
+    {
+      "name": "Instagram",
+      "image": "./Images/instagram-svgrepo-com.svg"
+    },
+    {
+      "name": "Linkedin",
+      "image": "./Images/linkedin-svgrepo-com.svg"
+    }
+  ],
   "teachers": [
     {
       "name": "Samuel Mercado",
