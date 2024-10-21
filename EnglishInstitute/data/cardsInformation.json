@@ -1,20 +1,59 @@
 {
-    "products": [
-      {
-        "title": "Ingles Basico",
-        "image": "./Images/product1.png",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-      },
-      {
-        "title": "Ingles Intermedio",
-        "image": "./Images/product2.png",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-      },
-      {
-        "title": "Mentorias",
-        "image": "./Images/product3.png",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-      }
-    ]
-  }
-  
+  "products": [
+    {
+      "title": "Ingles Basico",
+      "image": "./Images/product1.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "title": "Ingles Intermedio",
+      "image": "./Images/product2.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "title": "Mentorias",
+      "image": "./Images/product3.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    }
+  ],
+  "reviews": [
+    {
+      "name": "Juan Pérez",
+      "image": "./Images/JuanPerez.jpg",
+      "description": "Las clases de inglés fueron excelentes. Aprendí mucho en poco tiempo gracias a los profesores y el material didáctico. ¡Muy recomendable!"
+    },
+    {
+      "name": "María González",
+      "image": "./Images/MariaGonzales.jpg",
+      "description": "Me encantó la manera en que explican los conceptos. El enfoque práctico me ayudó a mejorar mi fluidez rápidamente. Las clases son muy interactivas."
+    },
+    {
+      "name": "Carlos Rodríguez",
+      "image": "./Images/CarlosRodriguez.jpg",
+      "description": "El curso es increíblemente completo. Los profesores están muy bien capacitados y te ayudan en todo momento. Aprendí mucho más de lo que esperaba."
+    },
+    {
+      "name": "Ana López",
+      "image": "./Images/AnaLopez.jpg",
+      "description": "Nunca pensé que aprender inglés podría ser tan fácil y divertido. Las clases son dinámicas y me siento más segura al hablar. ¡Recomendadísimo!"
+    }
+  ],
+  "teachers": [
+    {
+      "name": "Samuel Mercado",
+      "image": "./Images/samuel.jpg",
+      "description": "sdkaskdd"
+    },
+    {
+      "name": "Jamil Alanoca",
+      "image": "./Images/jamil.jpg",
+      "description": "Me interactivas."
+    },
+    {
+      "name": "Lucas Mercado",
+      "image": "./Images/lucas.jpg",
+      "description": "El curso es "
+    }
+  ]
+}
+
