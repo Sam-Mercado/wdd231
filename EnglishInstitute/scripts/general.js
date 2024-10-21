@@ -10,7 +10,7 @@ async function getSocial(){
 
     data.social.forEach(element => {
         let card = document.createElement('div');
-        card.classList.add('content-flex-row');
+        card.classList.add('content-flex-row-small');
         let socialImg = document.createElement('img');
 
         socialImg.src = `${element.image}`;
