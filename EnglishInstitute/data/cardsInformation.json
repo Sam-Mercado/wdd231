@@ -41,15 +41,15 @@
   "social": [
     {
       "name": "facebook",
-      "image": "./Images/facebook-svgrepo-com.svg"
+      "image": "./Images/facebook.png"
     },
     {
       "name": "Instagram",
-      "image": "./Images/instagram-svgrepo-com.svg"
+      "image": "./Images/instagram.png"
     },
     {
       "name": "Linkedin",
-      "image": "./Images/linkedin-svgrepo-com.svg"
+      "image": "./Images/linkedin.png"
     }
   ],
   "teachers": [
