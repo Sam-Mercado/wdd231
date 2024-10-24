@@ -19,10 +19,16 @@ const displayQuestions = (d)=>{
         card.classList.add('content-flex-column2');
         titleDiv.classList.add('titleDiv');
         contentDiv.classList.add('contentDiv');
+        contentDiv.style.display = 'none';
 
         titleH5.innerHTML=`${element.question}`;
         content.innerHTML = `${element.answer}`;
 
+        card.addEventListener('click', ()=>{
+            contentDiv.style.display = contentDiv.style.display === 'none'? 'block':'none';
+        })
+
+        
         card.appendChild(titleDiv);
         card.appendChild(contentDiv);
         titleDiv.appendChild(titleH5);

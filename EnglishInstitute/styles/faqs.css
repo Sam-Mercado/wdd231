@@ -1,7 +1,9 @@
 #faqs{
     margin: 100px auto;
 }
-
+#open{
+    display: block;
+}
 #questions{
     width: 500px; 
 }
@@ -24,5 +26,5 @@
     padding: 10px;
     border-right: solid 0.5px #496A70;
     border-left: solid 0.5px #496A70 ;
-    display: none;
+    
 }
