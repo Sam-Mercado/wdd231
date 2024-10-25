@@ -3,9 +3,8 @@ const teamContainer = document.querySelector('#teamContainer');
 const contactUs = document.querySelector('#contactUs');
 
 
-
 function addTitle(title, int){
-    titleH= document.createElement('h2')
+    titleH = document.createElement('h2')
     titleH.innerHTML= `${title}`
     int.prepend(titleH);
 }

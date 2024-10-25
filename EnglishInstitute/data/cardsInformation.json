@@ -50,6 +50,10 @@
     {
       "name": "Linkedin",
       "image": "./Images/linkedin.png"
+    },
+    {
+      "name": "TikTok",
+      "image": "./Images/tiktok.png"
     }
   ],
   "teachers": [
