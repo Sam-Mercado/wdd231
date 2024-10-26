@@ -16,3 +16,4 @@ const option = {year:'numeric', month:'long', day:'numeric'};
 const lastUpdated = today.toLocaleDateString('en-US', option);
 
 document.getElementById('last-update').textContent = `Last Update ${lastUpdated}`;
+

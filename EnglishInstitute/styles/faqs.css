@@ -38,3 +38,16 @@ div h3{
     border-left: solid 0.5px #496A70 ;
     
 }
+@media only screen and (max-width: 600px){
+    .titleDiv{
+        height: 50PX;
+        max-width: 300px;
+
+    }
+    div h3{
+        margin-top: 20%;
+    }
+    .contentDiv{
+        max-width: 250Px;
+    }
+}
