@@ -8,7 +8,6 @@
 .hero div{
     display: flex;
     justify-content: center;
-    align-items: left;
     flex-direction: column;
     
 }
